@@ -2,12 +2,14 @@
   // padding: 40px 0;
 
   .container {
-    padding-left: 160px;
-    padding-right: 160px;
+    // padding-left: 160px;
+    // padding-right: 160px;
+    padding: 0;
   }
 
-  background-color: $color-neon-blue;
-  background-color: #222;
+  // background-color: $color-neon-blue;
+  // background-color: #222;
+  background-color: #282829;
 
   // padding-left: 162px;
   // padding-right: 162px;
@@ -16,11 +18,20 @@
     border-top: 1px solid #D5C9BE;
     border-bottom: 1px solid #D5C9BE;
 
+    .container {
+      padding-left: 160px;
+      padding-right: 160px;
+    }
   }
 
   &__bottom {
     padding-top: 43px;
     padding-bottom: 60px;
+
+    .container {
+      padding-left: 160px;
+      padding-right: 160px;
+    }
   }
 
   &__nav-list {
@@ -182,6 +193,7 @@
     margin-bottom: 20px;
     margin: 0 auto;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .footer__btn {
@@ -204,3 +216,10 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 320px) {
+  .footer__social li {
+    margin: 0 5px;
+  }
+}
+
