@@ -1,0 +1,131 @@
+.features {
+  border-top: 100px solid #282829;
+  .container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    padding: 53px;
+    padding-right: 53px;
+    padding-top: 53px;
+    padding-top: 0;
+    // padding-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    text-align: left;
+
+    li {
+      position: relative;
+      font-family: "Arial";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33.6px;
+      padding-top: 34px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #55565A;
+      padding-left: 78px;
+
+      &::before {
+        content: url("../img/sprite/icon-flower.svg");
+        display: block;
+        position: absolute;
+        // top: 0;
+        // left: -78px;
+        left: 0;
+        top: 40px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 80px;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1919px) {
+  .features__container {
+    width: 40%;
+  }
+
+  .features img {
+    width: 30%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1689px) {
+  .features__container {
+    padding: 0 30px;
+  }
+
+  .features__list li {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .features .container {
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .features__container {
+    width: 100%;
+    order: -1;
+    margin-bottom: 20px;
+    padding: 0;
+    // padding-bottom: 20px;
+  }
+
+  .features img {
+    width: 40%;
+  }
+
+  .features__btn {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features__list li::before {
+    transform: scale(0.5);
+    left: -10px;
+    top: 25px;
+  }
+
+  .features__list li {
+    padding-left: 40px;
+  }
+
+  .features .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .features__btn {
+    width: 100%;
+  }
+}
+
+

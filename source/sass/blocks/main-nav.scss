@@ -1,9 +1,11 @@
 .main-nav {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     margin-right: 20px;
     margin-left: 60px;
+    margin-left: 20px;
     padding: 0;
 
     list-style: none;
@@ -11,10 +13,22 @@
 
   &__item {
     margin-right: 20px;
+    margin: 0 15px;
   }
 
   &__link {
     color: $color-default-white;
+    font-family: "Arial";
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
 
     &.is-active {
       opacity: 0.6;
@@ -23,5 +37,27 @@
 
   &__toggle {
     display: none;
+  }
+
+  &__wrapper {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1689px) {
+  .main-nav__wrapper {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .main-nav__wrapper {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav__list {
+    margin-left: 0;
   }
 }

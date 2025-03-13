@@ -1,0 +1,375 @@
+.form {
+  min-height: 828px;
+  .container {
+    padding: 0 162px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 628px;
+    // height: 660px;
+    position: relative;
+  }
+
+  &__img {
+    position: relative;
+    // width: 510px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    img {
+      position: absolute;
+      // height: 100%;
+    }
+
+    img:first-child {
+      height: 100%;
+      right: 0;
+    }
+
+    img:last-child {
+      position: absolute;
+      right: 100px;
+      /* bottom: 200px; */
+      bottom: -90px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__img-2 {
+    position: absolute;
+    bottom: 0;
+    bottom: 100px;
+    right: 260px;
+  }
+
+  &__wrapper {
+    width: 50%;
+    width: 781px;
+    width: 915px;
+    width: 950px;
+    padding: 73px 134px;
+    position: absolute;
+    z-index: 1000;
+    height: 628px;
+    bottom: 0;
+    // border: 1px solid green;
+    border-top-left-radius: 30px;
+  }
+
+  &__title {
+    color: #38535D;
+    font-family: "prata-regular";
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59.4px;
+    margin-bottom: 45px;
+    width: 55%;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__input-wrapper {
+    margin-bottom: 13px;
+    margin-bottom: 5px;
+    min-height: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__input-wrapper + input[type="checkbox"] {
+    min-height: unset;
+  }
+
+  input {
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100%;
+    min-height: 65px;
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    max-height: 24px;
+    border-radius: 4px;
+    min-height: unset;
+    margin-right: 16px;
+  }
+
+  label {
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24.7px;
+    color: #55565A;
+    display: flex;
+    align-items: center;
+    // align-items: flex-start;
+    display: flex;
+    // flex-wrap: wrap;
+  }
+
+  input::placeholder {
+    font-family: "Arial";
+    font-weight: 400;
+    color: #55565A;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1919px) {
+  .form .container {
+    padding: 100px 130px;
+    height: 100%;
+    position: relative;
+  }
+
+  .form__wrapper {
+    padding: 70px;
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 1689px) {
+  .form__img-2 {
+    // display: none;
+    width: 480px;
+  }
+
+  .form__img img:last-child {
+    right: -100px;
+  }
+
+  .form__wrapper {
+    width: 800px;
+  }
+
+  .form__title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .form__wrapper {
+    width: 100%;
+    width: 50%;
+    padding: 40px 70px;
+    height: 100%;
+  }
+
+  .form .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .form__img-2 {
+    // display: none;
+    width: 450px;
+  }
+
+  .form__content {
+    height: 540px;
+  }
+
+  .form__img img:last-child {
+    right: 0;
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .form__img img:last-child {
+    right: -100px;
+    object-fit: cover;
+  }
+
+  .form__wrapper {
+    padding: 40px;
+    // padding-right: 80px;
+    width: 55%;
+    text-align: left;
+  }
+
+  .form__img-2 {
+    // display: none;
+    width: 400px;
+    right: 200px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .form__img-2 {
+    // display: none;
+    width: 400px;
+    right: 180px;
+  }
+
+  .form__wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .form__img-2 {
+    width: 400px;
+    right: 50px;
+  }
+  .form__wrapper {
+    width: 50%;
+  }
+
+  .form {
+    min-height: auto;
+  }
+
+  // .form__title {
+
+  // }
+
+  .form__wrapper {
+    padding: 40px;
+    // padding-right: 80px;
+    // width: 100%;
+    text-align: left;
+  }
+
+  .form__title {
+    width: 100%;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .form__content {
+    height: 500px;
+  }
+
+  .form input {
+    min-height: 50px;
+  }
+
+  .form input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .form__input-wrapper {
+    min-height: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__img-2 {
+    width: 300px;
+    right: 50px;
+  }
+  .form__input-wrapper {
+    margin-bottom: 10px;
+  }
+  .form__img img:last-child {
+    /* right: -100px; */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* width: 1000px; */
+    // object-position: -450px;
+    // object-position: -270px;
+    // object-position: -180px;
+    object-position: -200px;
+    transform: scale(2);
+    right: -100px;
+  }
+
+  .form__img {
+    margin-top: auto;
+    // height: 50%;
+    // height: 35%;
+    height: 47%;
+  }
+
+  .form__content {
+    height: 1000px;
+    height: 700px;
+  }
+
+  .form__wrapper {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .form .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .form__img {
+      margin-top: auto;
+      height: 35%;
+    }
+  .form__img img:last-child {
+    transform: scale(2);
+    right: -100px;
+    object-position: -110px;
+    right: 0;
+  }
+    .form__img-2 {
+      width: 270px;
+      right: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+  .form__img img:last-child {
+    transform: scale(2);
+    right: -100px;
+    object-position: -135px;
+    right: 0;
+  }
+    .form__img-2 {
+      width: 200px;
+      right: 50px;
+    }
+}
+
+
+.form-error {
+  color: red;
+  font-size: 14px;
+  // margin-top: 5px;
+}
+
+

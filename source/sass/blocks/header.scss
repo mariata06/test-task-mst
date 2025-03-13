@@ -1,13 +1,76 @@
 .header {
-  padding: 28px 0;
+  padding: 40px 0;
+  // display: none;
+  // position: absolute;
+  position: fixed;
+  width: 100%;
+  z-index: 1100;
+  top: 0;
 
   background-color: $color-neon-blue;
+  background-color: transparent;
+  // background-color: pink;
 
   .container {
     display: flex;
+    align-items: center;
   }
 
   &__logo {
     color: $color-default-white;
+    text-transform: uppercase;
+    font-family: "prata-regular";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    margin-right: 200px;
+  }
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // height: 120px;
+  min-height: 120px;
+  /* Высота хедера */
+  background: transparent;
+  transition: background 0.3s ease, clip-path 0.3s ease;
+}
+
+.header-fixed {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  /* Затемнённый фон */
+  // clip-path: polygon(0 0, 70% 0, 60% 100%, 0 100%);
+  /* Оставляем правую часть прозрачной */
+}
+
+@media (max-width: 1919px) {
+  .header__logo {
+    margin-right: 50px;
+  }
+
+  .header .container {
+    padding-left: 130px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .header .container {
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header__logo {
+    margin-bottom: 20px;
   }
 }

@@ -1,10 +1,17 @@
 mixin intro()
-  .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
+  section.intro
     .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
 
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+      .intro__text
+
+        h1.title.title--h1.intro__title Новые квартиры в современном жилом комплексе
+        p.intro__paragraph.paragraph Предлагаем вам уникальные квартиры в новых жилых комплексах с отличной инфраструктурой и современными решениями. Живите в комфорте и стиле!
+
+        ul.intro__list
+          li Средняя цена за квартиру — <span>$150&nbsp;000</span>
+          li Более <span>30%</span> квартир уже продано
+          li До <span>17%</span> скидки на выбранные варианты
+
+        a(href="#").btn.btn--white-bg.intro__btn Оставить заявку
+
+      +img("content", "house-1", "png", 763, 1009, "Вариант дома")

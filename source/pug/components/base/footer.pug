@@ -1,3 +1,63 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__top
+        .footer__nav
+          ul.footer__nav-list
+            li
+              a(href="#") О нас
+            li
+              a(href="#") Преимущества
+            li
+              a(href="#") Заявка
+
+      .footer__bottom
+        .footer__wrapper
+          .footer__logo Domus
+          .footer__social
+            .footer__social-list
+              //- li
+              //-   a(href="#") instagram
+              //-     +icon("icon-instagram", 32, 32)
+              //- li
+              //-   a(href="#") tiktok
+              //-     +icon("icon-tiktok", 32, 32)
+              //- li
+              //-   a(href="#") in
+              //-     +icon("icon-in", 32, 32)
+              //- li
+              //-   a(href="#") facebook
+              //-     +icon("icon-facebook", 32, 32)
+              //- li
+              //-   a(href="#") telegram
+              //-     +icon("icon-telegram", 32, 32)
+              //- li
+              //-   a(href="#") youtube
+              //-     +icon("icon-youtube", 32, 32)
+
+              li
+                a(href="#")
+                  +icon("icon-instagram", 32, 32)
+              li
+                a(href="#")
+                  +icon("icon-tiktok", 32, 32)
+              li
+                a(href="#")
+                  +icon("icon-in", 32, 32)
+              li
+                a(href="#")
+                  +icon("icon-facebook", 32, 32)
+              li
+                a(href="#")
+                  +icon("icon-telegram", 32, 32)
+              li
+                a(href="#")
+                  +icon("icon-youtube", 32, 32)
+
+
+
+          a(href="#").btn.btn--white-bg.footer__btn Оставить заявку
+
+        .footer__copyright © 2024, Copyright.
+          a(href="#") Политика конфиденциальности
+          a(href="#") Условия использования

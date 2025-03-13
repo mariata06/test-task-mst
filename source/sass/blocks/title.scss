@@ -1,0 +1,69 @@
+.title {
+  &--h1 {
+    font-size: 80px;
+    line-height: 96px;
+  }
+}
+
+.paragraph {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+@media (max-width: 1919px) {
+  .title {
+    &--h1 {
+      font-size: 70px;
+      line-height: 86px;
+    }
+  }
+
+  .paragraph {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1689px) {
+  .title {
+    &--h1 {
+      font-size: 60px;
+      line-height: 76px;
+    }
+  }
+
+  .paragraph {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .title {
+    &--h1 {
+      font-size: 50px;
+      line-height: 66px;
+    }
+  }
+
+  .paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    &--h1 {
+      font-size: 30px;
+      line-height: 46px;
+    }
+  }
+
+  .paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
